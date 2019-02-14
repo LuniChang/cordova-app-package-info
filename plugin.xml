@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.lunichang.app.packageinfo" version="1.0.0">
   <name>AppPackageInfo</name>
   <js-module name="AppPackageInfo" src="www/AppPackageInfo.js">
-    <clobbers target="cordova.plugins.AppPackageInfo"/>
+    <clobbers target="AppPackageInfo"/>
   </js-module>
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">

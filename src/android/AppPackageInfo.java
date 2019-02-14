@@ -62,7 +62,7 @@ public class AppPackageInfo extends CordovaPlugin {
     private void getAllAppInfo(CallbackContext callbackContext) {
         PackageManager packageManager = context.getApplicationContext().getPackageManager();
         List<PackageInfo> packages = packageManager.getInstalledPackages(0);
-        JSONObject jo = new JSONObject();
+
 
         JSONArray jsonInfos = new JSONArray();
 
@@ -86,11 +86,10 @@ public class AppPackageInfo extends CordovaPlugin {
 
 
         } catch (Exception e) {
-            jo = null;
             Log.e(TAG, e.getMessage());
         }
 
-        PluginResult r = new PluginResult(PluginResult.Status.OK, jo);
+        PluginResult r = new PluginResult(PluginResult.Status.OK, jsonInfos);
 
         r.setKeepCallback(true);
 
