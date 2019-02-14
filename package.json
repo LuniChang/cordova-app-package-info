@@ -1,0 +1,19 @@
+{
+  "name": "apppackageinfo",
+  "version": "1.0.0",
+  "description": " app package info only for android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agarwalkartik/cordova-plugin-packageinfo.git"
+  },
+  "author": "LuniChang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agarwalkartik/cordova-plugin-packageinfo/issues"
+  },
+  "homepage": "https://github.com/agarwalkartik/cordova-plugin-packageinfo#readme"
+}
