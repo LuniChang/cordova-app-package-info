@@ -4,6 +4,8 @@ get all install app package info ,android only
 
 ＃use
 
+declare var AppPackageInfo:any;
+
  AppPackageInfo.getAllAppInfo(
       data => {
       
