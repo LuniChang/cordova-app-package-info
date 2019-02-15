@@ -6,9 +6,9 @@ get all install app package info ,android only
 
 declare var AppPackageInfo:any;
 
- AppPackageInfo.getAllAppInfo(
-      data => {
-      
+
+    AppPackageInfo.getAllAppInfo(
+      data => { 
            // the data is array
            
            data[0].name; //app name
@@ -19,4 +19,18 @@ declare var AppPackageInfo:any;
            
            data[0].packageName;
            
+        });
+        
+        
+
+    AppPackageInfo.getAppInfo("com.sample.app",data => {
+          
+          data.name; //app name
+           
+           data.versionName;
+           
+           data.versionCode;
+           
+           data.packageName;
+        
         });
