@@ -4,7 +4,8 @@ get all install app package info ,android only
 
 ＃use
 
- AppPackageInfo.getAllAppInfo(data => {
+ AppPackageInfo.getAllAppInfo(
+      data => {
            data[0].name; //app name
            data[0].versionName;
            data[0].versionCode;
